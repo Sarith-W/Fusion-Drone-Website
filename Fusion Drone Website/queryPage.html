@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+    <html lang="en" dir = "ltr">
+
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <title>Fusion | Query Form</title>
+            <link rel="icon" href="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/Home_Page/icon.png" id="icon">
+            <link rel="stylesheet" href="Resources/w1912796_Sandeep/QuearyPage/style.css">
+            <link rel="stylesheet" href="Resources/w1912796_Sandeep/QuearyPage/common_style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+            <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap" rel="stylesheet">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        </head>
+
+        <body>
+
+             <!-- _______________ Navigation bar container _______________ -->
+
+            <div class="navigation">
+                <ul id="menu">
+                    <li class="menu_item"><a href="quiz.html" id="test">Quiz</a></li>
+                <li class="menu_item"><a href="Buy_Products.html">Store</a></Li>
+                <li class="menu_item" id="logo_space_left"><a href="thumbnail.html">Thumbnail Images</a></li> 
+                <li class="menu_item" id="logo_space_right"><a href="sitemap.html">Diagram SVG</a></li>
+                <li class="menu_item"><a href="queryPage.html">Query Form</a></li>
+                <li class="menu_item"><a href="our_team.html">Our Team</a></li>
+                </ul>
+                <a href="index.html"><img src="Resources/w1912796_Sandeep/QuearyPage/images/logo_glow.gif" alt="Logo" id="logo_menu"></a>
+            </div>
+
+            <!-- ______________ FAQ button ______________ -->
+
+            <div id = "faqButton">
+                <a href="faq.html"><button>FAQ's</button></a>
+                <p>HAVE ANY QUESTIONS?</p>
+            </div>
+
+                <!--Container which contains both the left pane and the form-->
+            <div class = "container">
+    
+            <!-- ________________________ Left Icon Pane _______________________ -->
+            
+                <div id="leftTab">
+                        <!-- ____________ Icons and theeir anchor links _____________ -->
+
+                    <div id="icons">
+
+                        <div class="icon">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </div>
+
+                        <div class= "icon">
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </div>
+
+                        <div class="icon">
+                            <a href="https://www.whatsapp.com/" target="_blank">
+                                <ion-icon name="logo-whatsapp"></ion-icon>
+                            </a>
+                        </div>
+
+                        <div class= "icon">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </div>
+
+                        <div class= "icon">
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                    
+                <!-- ____________________ Form __________________________ -->
+
+                <form id = "mainForm" action="mailto:sandeep.20210057@iit.ac.lk" method="post" enctype="text/plain">
+                    <div id="section1">
+
+                        <div id="title">
+                            <h2>CONTACT US</h2>
+                        </div>
+                            
+                        <div class="half">
+
+                            <!-- _________________ name input ________________ --> 
+
+                            <div class="item">
+                                <label for="name" id="nameLabel">NAME</label>
+                                <input name="Name" type="text" id="name" placeholder="Enter your full name...">
+                            </div>
+                            
+                            <!-- _____________ E-mail input ____________ -->
+
+                            <div class="item">
+                                <label for="email">E-MAIL</label>
+                                <input name="E-mail" type="text" id="email" placeholder="user1234@gmail.com">
+                            </div>
+                        </div>
+                            
+                            
+                        <div class="half">
+                            <!-- ______________ Subject select ______________ -->
+
+                            <div class="item">
+                                <label for="select">SUBJECT</label>
+                                <select name="Subject" id="select" class="select">
+                                    <option value="default" disabled selected>Select your Subject</option>
+                                    <option value="delivery">Delivery</option>
+                                    <option value="price">Price</option>
+                                    <option value="technical">Technical</option>  
+                                    <option value="review">Review</option> 
+                                    <option value="complain">Complain</option>    
+                                </select>
+                            </div>
+
+                            <!-- ___________ Contact Number __________ -->
+
+                            <div class="item">
+                                <label for="contactNumber">CONTACT NUMBER</label>
+                                <input name="Contact Number" type="tel" id="contactNumber" placeholder="1234567890...">
+                            </div>
+                        </div>
+
+                        <div class="full">
+
+                            <!-- _____________ Query Message _____________ -->
+
+                            <label for="message">MESSAGE</label>
+                            <textarea name="Message" id="message" maxlength="400" placeholder="Describe your message here... (400 characters maximum)"></textarea>
+                        </div>
+
+                        <!-- _____________ view query button ____________ -->
+
+                        <div class="action">
+                            <button onclick="validate(event)">VIEW QUERY</button>
+                            <button type="reset">RESET</button>
+                        </div>
+                    </div>
+                        
+                    <!-- _____________ Form Summary ____________ -->
+
+                    <div id = "summary"  class="hide">
+                        <div id="summaryMessage"></div>
+                        
+                        <!-- _____________ Summary Buttons ____________ -->
+
+                        <div class = "action" id="summaryButtons">
+                            <button onclick="editButton(event)">EDIT</button>
+                            <button type="submit" onclick="submitButton(event)">SUBMIT</button>
+                        </div> 
+                    </div>
+
+                </form>
+
+                <!-- ________________________ Theme mode selector button ________________________ -->
+                <div>
+                    <button id="mode" onclick="switch_mode()"><i class="fa fa-moon moon"></i></button>
+                </div>
+                    
+            </div>
+
+            <!-- ______________________ Popup _______________________ -->
+
+            <div class="popup" id ="popup">
+                <img src = "Resources/w1912796_Sandeep/QuearyPage/images/tick.png" id="tick_logo" alt="image">
+                <h2>Thank You</h2>
+                <p>Your query has been sucessfully submitted...</p>
+                <button type="button" onclick="closePopup(event)">OK</button>
+            </div>
+
+
+            <!-- ___________________ Common footer container ___________________ -->
+
+            <footer class="footer-distributed">
+                <div class="footer-left">
+                    <img id="footer-logo" src="Resources/w1912796_Sandeep/QuearyPage/images/logo_white.png" alt="Fusion Logo">
+                    <p class="footer-links">
+                        <a href="index.html" class="link-1">Home</a>
+                        <a href="quiz.html">Quiz</a>
+                        <a href="Buy_Products.html">Store</a>
+                        <a href="thumbnail.html">Thumbnail Images</a>
+                        <a href="sitemap.html">Diagram SVG</a>
+                        <a href="our_team.html">Our Team</a>
+                    </p>
+                    <p class="footer-company-name">&copy;2022. The Fusion Drones.inc</p>
+                </div>
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>57 Ramakrishna Rd</span>Colombo 06</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+9413848627</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:sandeep.20210057@iit.ac.lk">sandeep.20210057@iit.ac.lk</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About Us</span>
+                        We are Fusion Drones..... 
+                    </p>
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100008143036704" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sandeep_chanura/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sandeep-abeykoon-39094b223/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <div id="editor-info">
+                        <a href="sandeep.html"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+            </footer>
+              
+
+            <!-- ____________________ External java script file ______________________ -->
+
+            <script src = "Resources/w1912796_Sandeep/QuearyPage/script.js"></script>   <!-- html validator says the type attribute is unnecessary for javascript components-->
+
+            <!-- _________________________ Scripts for the icons and fonts ________________________ -->
+            
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <script src="https://kit.fontawesome.com/d9bc9ff140.js" crossorigin="anonymous"></script>
+           
+        </body>
+    </html>

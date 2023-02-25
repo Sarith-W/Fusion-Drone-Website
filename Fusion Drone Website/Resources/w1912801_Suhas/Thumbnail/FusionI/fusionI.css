@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+  
+}
+body{
+  background-color: rgb(26, 26, 26);
+  color: white;
+}
+
+
+/*  Setting Image as Background  */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/fusion1.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-position: relative;
+    background-size: cover;
+}
+
+.textbox{
+    background-color: transparent;
+    align-items: center;
+    width: 50;
+    color: #ffF;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(230, 204, 255);
+    color: rgb(26, 26, 26);
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 1px 5px 10px;
+    border-color: rgb(230, 204, 255);
+    border-style: solid;
+    
+
+ }
+
+.btn:hover{
+    border-color: blueviolet;
+    color: blueviolet;
+}
+
+.textbox h1{
+    background-color: transparent;
+    color: #ffF;
+    font-size: 62px;
+}
+
+.textbox p{
+    background-color: transparent;
+    font-size: 18px;
+    margin: 10px 0 40px;
+    color: #fff;
+}
+
+.alignRow{
+    display: flex;
+ }
+ .DroneSet {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-left: 10%
+ }
+ li{
+    margin-top: 5%;
+    margin-bottom: 5%;
+ }
+
+/*  This is The CSS for The Card */
+
+ .card{
+    font-size: 30px;
+    margin-right: 2%;
+    float: left;
+    width: 500px;
+    width: 100%;
+    max-height: 850px;
+    text-align: left;
+    padding: 35px 35px;
+    border-radius: 10px;
+    border: 1px solid rgba(201, 201, 201, 0.596);
+ }
+
+ .card2{
+    padding-right: 20%;
+    width: 800px;
+    size: 1200px;
+    color: rgb(73, 73, 73);
+   ;
+    
+    
+ }
+
+#spec{
+    list-style: none;
+ }
+.swiper{
+    align-content: left;
+    width: 100%;
+    height: fit-content;
+}
+.swiper-slide img{
+    border-radius: 10px;
+    
+    width: 100%;
+    align-content: flex-start;
+    
+}
+.swiper .swiper-button-prev{
+    color: rgb(230, 204, 255);
+    background-color: transparent;
+}
+
+.swiper .swiper-button-next{
+    color: rgb(230, 204, 255);
+    background-color: transparent;
+}
+
+.swiper .swiper-button-prev:hover{
+    color: blueviolet;
+    background-color: transparent;
+}
+
+.swiper .swiper-button-next:hover{
+    color: blueviolet;
+    background-color: transparent;
+}
+.card:hover{
+    border-color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navigation bar CSS for Lacation and Colours  */
+
+.navigation{
+    background-color: transparent;
+
+    padding-bottom: 30px;
+    color: white;
+    font-family: 'Courier Prime', monospace;
+    position: fixed;
+    z-index: 2;
+    display: flexbox;
+    margin-top: -5px;
+    margin-left: 7%;
+ }
+ .navigation a{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    transition: all 1s;
+ }
+ .navigation a:hover {
+   text-decoration-line: underline;
+    text-decoration-style: double;
+   text-decoration-color: rgb(162, 0, 255);
+   -webkit-text-decoration-color: rgb(162, 0, 255);
+ }
+ #logo{
+    background-color: transparent;
+    width: 200px;
+    margin-right: 40px;
+    margin-left: 520px;
+    margin-top: -65px;
+ }
+ #logo_space_left{
+    margin-right: 75px;
+ }
+ #logo_space_right{
+    margin-left: 200px;
+ }
+ #menu li{
+    background-color: transparent;
+    display: inline;
+    padding-right: 40px;
+ }
+#menu{
+    background-color: transparent;
+    width: 100%;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 70px;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ 
+
+ 
+
+
+
+
+
+
+
+
+/*  Footer */
+
+
+
+ .footer-distributed{
+	background: rgb(0, 0, 0);
+
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    background-color: transparent;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+#footer-logo{
+	height: 50%;
+  width: 50%;
+  margin-left: 8%;
+  background-color: transparent;
+}
+
+.footer-distributed h3 span{
+	color:  #1363DF;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: -10px 0 12px;
+	padding: 0;
+  background-color: transparent;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+  background-color: transparent;
+  
+}
+
+.footer-distributed .footer-company-name{
+	color:  #1363DF;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+  background-color: transparent;
+}
+
+/* Footer Center */
+
+
+.footer-distributed .footer-center{
+	width: 35%;
+  
+}
+
+.footer-distributed .footer-center i{
+	color: #ffffff;
+	font-size: 25px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+ 
+  
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+  
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+  
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #1363DF;
+	text-decoration: none;;
+  margin-top: 20px;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+  margin-left: 4%;
+  margin-right: 0%;
+  
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+#editor-info a{
+  display: inline-block;
+	width: 120px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Darkmode Light mode Button to change dark and light mode  */
+
+
+
+#mode{
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 15px;
+  background-color: transparent;
+  background-color: white;
+  position: fixed;
+  border: 0px;
+  margin-left: 95%;
+  margin-top: 49%;
+  z-index: 5;
+}
+#mode:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 1px 1px;
+  color: white;
+  cursor: pointer;
+}
+.moon{
+  font-size: 30px;
+  top: -1px;
+  left: 2px;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  color: rgb(96, 6, 180);
+}
+.light-mode .moon{
+  color: white;
+}
+.light-mode #mode{
+  background-color: rgb(97, 3, 152);
+}
+.light-mode .alignRow{
+  color: black;
+}
+.light-mode a{
+  color: black;
+}
+
+

@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color:#1c1c1c ;
+    color: white;
+}
+
+.heading{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-decoration: underline 4px;
+}
+.light-mode .heading{
+    color: black;
+}
+
+.faqContainer{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.question{
+    border-bottom: 1px solid white;
+}
+.light-mode .question{
+    border-bottom: 1px solid black;
+}
+
+.question button{
+    width:100%;
+    background-color: #1c1c1c;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+ p{
+    font-size: 22px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+    
+}
+.light-mode p{
+    color: black;
+}
+
+.fa-angle-down{
+    transition: transform 0.5s ease-in;
+    color: rgb(255, 255, 255);  
+}
+.light-mode .fa-angle-down{
+    color: black;
+}
+
+/* when the button is clicked*/
+.question p.show{
+    max-height: 200px;
+    opacity: 1;
+    padding: 0px 15px 30px 15px;
+}
+
+.question button .fa-angle-down.rotate{
+    transform: rotate(180deg);
+}
+
+#noteText{
+    color: rgb(186, 37, 37);
+    font-weight: 500;
+}
+
+#mainContainer{
+    margin-top: 150px;
+}
+
+#anchorContainer{
+    position: absolute;
+    top: 80%;
+    border: 2px solid white;
+    padding: 8px;
+    margin-left: 6px;
+    border-radius: 20px;
+    font-style: italic;
+    text-align: center;
+}
+.light-mode #anchorContainer{
+    color: black;
+    border: 2px solid black;
+}
+
+a:link{
+    color: rgb(168, 153, 153);
+}
+
+/* Styles for the navigation menu */
+.navigation{
+    padding-bottom: 30px;
+    z-index: 6;
+    margin-top: -150px;
+    margin-left: 97px;
+    padding-bottom: 0;
+}
+#logo_menu{
+    width: 200px;
+    margin-right: 40px;
+    margin-left: 515px;
+    margin-top: -65px;
+    padding: 0;
+}
+#logo_space_left{
+    margin-right: 75px;
+}
+#logo_space_right{
+    margin-left: 200px;
+}
+#menu .menu_item{
+    padding-right: 40px;
+}
+#menu{
+    width: 100%;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+
+.footer-distributed{
+	width: 100%;
+	padding: 55px 50px;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+
+/* Styles for the mode change button */
+#mode{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 15px;
+    background-color: transparent;
+    background-color: white;
+    position: fixed;
+    border: 0px;
+    margin-left: 95%;
+    margin-top: 8%;
+    z-index: 1;
+}
+#mode:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 1px 1px;
+    color: white;
+    cursor: pointer;
+}
+.moon{
+    font-size: 30px;
+    top: -1px;
+    left: 2px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    color: rgb(96, 6, 180);
+}
+.light-mode .moon{
+    color: white;
+}
+.light-mode #mode{
+    background-color: rgb(97, 3, 152);
+}
+.light-mode .navigation a{
+    color: black;
+}
+.light-mode .icon_top{
+    background-color: white;
+    color: rgb(97, 3, 152);
+}
+.light-mode .question button{
+    background-color: white;
+    color: black;
+}
+
+

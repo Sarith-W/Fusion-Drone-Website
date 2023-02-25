@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="refresh" content="4; url=index.html">
+        <title>Fusion | Presentation</title>
+        <link rel="icon" href="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Presentation_Page/icon.png" id="icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: rgb(26, 26, 26);
+                color: white;
+                width: 100%;
+                height: auto;
+            }
+            #logo{
+                width: 20%;
+                position: absolute;
+                margin-left: 39%;
+                margin-top: 10%;
+            }
+            .name, .uow_id, .email{
+                font-family: 'Poppins', sans-serif;
+                line-height: 10px;
+                font-weight: 300;
+            }
+            #student_1, #student_2, #student_3, #student_4{
+                background-color: rgba(155, 155, 155, 0.439);
+                width: 40%;
+                border-radius: 300px;
+                position: absolute;
+                transition: all 0.7s;
+            }
+            #student_1:hover, #student_2:hover, #student_3:hover, #student_4:hover{
+                box-shadow: 0 0 5px 5px;
+                transform: scale(1.05);
+            }
+            #student_1{
+                margin-top: 250px;
+                margin-left: 3%;
+            }
+            #student_2{
+                margin-top: 250px;
+                margin-left: 55%;
+            }
+            #student_3{
+                margin-left: 3%;
+                margin-top: 500px;
+            }
+            #student_4{
+                margin-left: 55%;
+                margin-top: 500px;
+            }
+            #student_1_image, #student_2_image, #student_3_image, #student_4_image{
+                width: 180px;
+                border-radius: 100px;
+                margin-left: 0;
+            }
+            #student_2_image{
+                margin-left: 70%;
+            }
+            #student_4_image{
+                margin-left: 70%;
+            }
+            #student_1_text{
+                position: absolute;
+                margin-left: 40%;
+                margin-top: -140px;
+            }
+            #student_2_text{
+                position: absolute;
+                margin-left: 10%;
+                margin-top: -140px;
+            }
+            #student_3_text{
+                position: absolute;
+                margin-left: 40%;
+                margin-top: -140px;
+            }
+            #student_4_text{
+                position: absolute;
+                margin-left: 10%;
+                margin-top: -150px;
+            }
+            .student_number{
+                margin-top: -3%;
+                border-bottom: 2px solid black;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            #title{
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            #subject{
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            #students{
+                width: 100%;
+                height: auto;
+                margin-top: -5%;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Adding the module name, subject and the logo  -->
+        <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Presentation_Page/logo_glow.gif" alt="logo" id="logo">
+        <h1 id="title">Web Design and Development - 4COSC011W</h1>
+        <h2 id="subject">Subject - Entertainment</h2>
+        <hr>
+
+        <!-- Creating a separate div for all the four students -->
+        <div id="students">
+
+            <!-- Student 1 -->
+            <div id="student_1">
+                <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Presentation_Page/student_1.jpg" alt="Student 1 - Sarith Wijesundera" id="student_1_image">
+                <div id="student_1_text">
+                    <h2 class="student_number">Student 1</h2>
+                    <h3 class="name">Sarith Wijesundera</h3>
+                    <h3 class="uow_id">w1912785</h3>
+                    <h3 class="email">sarith.20210010@iit.ac.lk</h3>
+                </div>
+            </div>
+
+            <!-- Student 2 -->
+            <div id="student_2">
+                <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Presentation_Page/student_2.jpg" alt="Student 2 - Sandeep Abeykoon" id="student_2_image">
+                <div id="student_2_text">
+                    <h2 class="student_number">Student 2</h2>
+                    <h3 class="name">Sandeep Abeykoon</h3>
+                    <h3 class="uow_id">w1912796</h3>
+                    <h3 class="email">sandeep.20210057@iit.ac.lk</h3>
+                </div>
+            </div>
+
+            <!-- Student 3 -->
+            <div id="student_3">
+                <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Presentation_Page/student_3.jpg" alt="Student 3 - Daham Rajapakse" id="student_3_image">
+                <div id="student_3_text">
+                    <h2 class="student_number">Student 3</h2>
+                    <h3 class="name">Daham Rajapakse</h3>
+                    <h3 class="uow_id">w1915881</h3>
+                    <h3 class="email">daham.20210052@iit.ac.lk</h3>
+                </div>
+            </div>
+
+            <!-- Student 4 -->
+            <div id="student_4">
+                <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Presentation_Page/student_4.jpg" alt="Student 4 - Suhas Chandrasekara" id="student_4_image">
+                <div id="student_4_text">
+                    <h2 class="student_number">Student 4</h2>
+                    <h3 class="name">Suhas Chandrasekara</h3>
+                    <h3 class="uow_id">w1912801</h3>
+                    <h3 class="email">suhas.20210119@iit.ac.lk</h3>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/c0739b4840.js" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fusion | Quiz</title>
+    <link rel="icon" href="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1915881_Daham/Quiz/icon.png" id="icon">
+    <link rel="stylesheet" href="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1915881_Daham/Quiz/style.css">
+    <link rel="stylesheet" href="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1915881_Daham/Quiz/common.css">
+    <script src="https://kit.fontawesome.com/d9bc9ff140.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation bar container -->
+    <div class="navigation">
+        <ul id="menu">
+            <li class="menu_item"><a href="quiz.html" id="test">Quiz</a></li>
+                <li class="menu_item"><a href="Buy_Products.html">Store</a></Li>
+                <li class="menu_item" id="logo_space_left"><a href="thumbnail.html">Thumbnail Images</a></li> 
+                <li class="menu_item" id="logo_space_right"><a href="sitemap.html">Diagram SVG</a></li>
+                <li class="menu_item"><a href="queryPage.html">Query Form</a></li>
+                <li class="menu_item"><a href="our_team.html">Our Team</a></li>
+        </ul>
+        <a href="index.html"><img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1915881_Daham/Quiz/logo_glow.gif" alt="Logo" id="logo_menu"></a>
+    </div>
+
+    <button id="mode" onclick="switch_mode()"><i class="fa fa-moon moon"></i></button>
+    
+    <button class="start-quiz-btn" type="button">Start Quiz</button>
+    <div class="container">
+        <div class="top-bar">
+            <div class="question-counter">
+                <!--Question One of Ten-->
+            </div>
+            <div class="timer">
+                <span><i class="fa-regular fa-clock"></i></span>
+                <span class="time-left"></span>
+            </div>
+            <div class="time_line"></div>
+        </div>
+        <form id="myform">
+            <div class="ques-text">
+                <!--Questions-->
+            </div>
+            <div class="option-div">
+                <!--Options-->
+            </div>
+            <br>
+        </form>
+        <button class="next-ques-btn " type="button">Next Question</button>
+    </div>
+    <div class="result-div">
+        <i class="fa-solid fa-crown"></i>
+        <span>You've completed the Quiz!</span>
+        <div class="score-div">
+            <!--Insert Score Here-->
+        </div>
+        <div class="results-div">
+            <div class="correct-div">
+                <!--Correct Answers-->
+            </div>
+            <div class="wrong-div">
+                <!--Wrong Answers-->
+            </div>
+            <div class="time-taken">
+                <!--Time Taken-->
+            </div>
+        </div>
+    </div>
+    <div>
+        <!--Animated Wave-->
+        <svg id="waves" width="100%" height="100%" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg"
+            class="transition duration-300 ease-in-out delay-150">
+            <style>
+            </style>
+            <defs>
+                <linearGradient id="gradient" x1="19%" y1="89%" x2="81%" y2="11%">
+                    <stop offset="5%" stop-color="#9900ef88"></stop>
+                    <stop offset="95%" stop-color="#e056fd88"></stop>
+                </linearGradient>
+            </defs>
+            <path
+                d="M 0,600 C 0,600 0,200 0,200 C 229.5,234 459,268 699,268 C 939,268 1189.5,234 1440,200 C 1440,200 1440,600 1440,600 Z"
+                stroke="none" stroke-width="0" fill="url(#gradient)"
+                class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+            <style>
+            </style>
+            <defs>
+                <linearGradient id="gradient1" x1="19%" y1="89%" x2="81%" y2="11%">
+                    <stop offset="5%" stop-color="#9900efff"></stop>
+                    <stop offset="95%" stop-color="#e056fdff"></stop>
+                </linearGradient>
+            </defs>
+            <path
+                d="M 0,600 C 0,600 0,400 0,400 C 218,411.5 436,423 676,423 C 916,423 1178,411.5 1440,400 C 1440,400 1440,600 1440,600 Z"
+                stroke="none" stroke-width="0" fill="url(#gradient)"
+                class="transition-all duration-300 ease-in-out delay-150 path-1"></path>
+        </svg>
+    </div>
+    <!--Footer-->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <img id="footer-logo" src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1915881_Daham/Quiz/White_Letters.png" alt="Fusion Logo">
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Home</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="Buy_Products.html">Store</a>
+                <a href="thumbnail.html">Thumbnail Images</a>
+                <a href="sitemap.html">Diagram SVG</a>
+                <a href="our_team.html">Our Team</a>
+            </p>
+
+            <p class="footer-company-name">Fushion Drones © 2022</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>57 Ramakrishna Rd</span>Colombo 06</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>+94753604689</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:dahamdmrajapakse@gmail.com">dahamdmrajapakse@gmail.com</a></p>
+            </div>
+
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About Us</span>
+                We are Fushion Drones .....
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/DahamRajapaksee/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/dahamm_r/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dahamrajapakse/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div id="editor-info">
+                <a href="daham.html"><i class="fa-solid fa-code"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!--Js Scripts-->
+    <script src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1915881_Daham/Quiz/index.js"></script>
+    <script src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1915881_Daham/Quiz/Questions.js"></script>
+</body>
+
+</html>

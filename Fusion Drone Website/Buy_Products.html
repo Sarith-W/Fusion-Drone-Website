@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fusion | Store</title>
+        <link rel="icon" href="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/icon.png" id="icon">
+        <link rel="stylesheet" href="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/css_Buy_Products.css">
+        <link rel="stylesheet" href="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912796_Sandeep/ExternalStyleSheet/common_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Back to the top page id -->
+        <div id="page_top"></div>
+
+        <!-- Navigation bar container -->
+        <div class="navigation">
+            <ul id="menu">
+                <li class="menu_item"><a href="quiz.html" id="test">Quiz</a></li>
+                <li class="menu_item"><a href="Buy_Products.html">Store</a></Li>
+                <li class="menu_item" id="logo_space_left"><a href="thumbnail.html">Thumbnail Images</a></li> 
+                <li class="menu_item" id="logo_space_right"><a href="sitemap.html">Diagram SVG</a></li>
+                <li class="menu_item"><a href="queryPage.html">Query Form</a></li>
+                <li class="menu_item"><a href="our_team.html">Our Team</a></li>
+            </ul>
+            <a href="index.html"><img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/logo_glow.gif" alt="Logo" id="logo_menu"></a>
+        </div>
+
+        <!-- Welcome page container -->
+        <div class="store_outer">
+            <div class="store">
+                <br><br><br><br>
+                <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/logo_white.png" alt="Logo" id="logo">
+                <h1 id="welcome">Welcome to The Drone Store!</h1>
+                <br><br><br><br><br><br>
+            </div>  
+        </div>
+
+        <!------------------------------------- Drone 1 -------------------------------------->
+        <!-- Drone 1 introduction container -->
+        <div id="drone1_intro">
+            <h1>The All New <span>Fusion I</span></h1>
+            <button class="learn_more"><a href="fusionI.html">Learn More &#10132;</a></button>
+            <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_1_intro.png" alt="Drone 1 Intro" class="intro1">
+        </div>
+
+        <!-- Drone 1 details container -->
+        <div class="container_1">
+            <div id="item_1">
+                <div class="item_left" >
+                    <h1 class="product_name">Fusion I</h1>
+                    <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_1_white.jpg" alt="Drone 1" id="drone_1">
+                    <p class="price_left">$ 299.00</p>
+                    <p class="in_stock_left">*In-Stock</p>
+                    <p class="stars_left">&bigstar; &bigstar; &bigstar; &bigstar; &star; </p>
+                    <p class="item_description_left item_desc">Capture stunning imagery with a legendary Hasselblad camera and enjoy smooth flight with omnidirectional obstacle sensing. Every improvement on Fusion 1 sets a higher standard for aerial photography. Fly with Fusion 1 and discover imaging above everything.</p>
+                </div>
+                <span class="vertical_line"></span>
+                <div class="description_right desc">
+                    <p class="description">
+                        <strong>Product Name :&nbsp; &nbsp; </strong> <span class="content">Fusion I Drone</span>
+                        <br>
+                        <strong>Specifications :</strong><br>
+                    </p>    
+                    <ul class="content">
+                        <li>Immersive Flight Experience</li>
+                        <li>4K/60fps Super-Wide 150° FOV</li>
+                        <li>10km Low-Latency Video Transmission</li>
+                        <li>Brand-New S Mode</li>
+                        <li>Emergency Brake and Hover</li>
+                    </ul>
+                    <p class="description">  
+                        <strong>Available Colours :</strong>
+                    </p>
+                    <button onclick="document.images[3].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_1_white.jpg'" class="white btn" id="item1_colour1">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <button onclick="document.images[3].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_1_black.jpg'" class="black btn" id="item1_colour2">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <button onclick="document.images[3].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_1_red.jpg';" class="red btn" id="item1_colour3">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <button onclick="document.images[3].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_1_yellow.jpg'" class="yellow btn" id="item1_colour4">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <form name="quantity">
+                        <label for="quantity_input1" id="quantity_label" class="description"> <strong>Quantity : </strong>&nbsp; &nbsp; </label>
+                        <input type="number" name="quantity" class="quantity_input" id="quantity_input1" value="1" min="1" max="9">
+                    </form>
+                    <button class="count" onclick="location.href='#cart_details'">0</button>
+                    <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/cart.png" alt="cart" id="cart_image" onclick="location.href='#cart_details'">
+                    <button id="cart_button" class="cart_button" onclick="item_1(); addToTheCart()">Add to The Cart</button>
+                </div>
+            </div>   
+        </div>
+
+        <!------------------------------------- Drone 2 -------------------------------------->
+        <!-- Drone 2 introduction container -->
+        <div id="drone2_intro">
+            <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_2_intro.png" alt="Drone 2 Intro" class="intro2">
+            <h1>The New <br> Generation <br> of <br> Drones...</h1>
+            <h2>With a Touch of Luxury <br> <span>Fusion II</span> </h2>
+            <button class="learn_more"><a href="fusionII.html">Learn More &#10132;</a></button>
+        </div>
+
+        <!-- Drone 2 details container -->
+        <div class="container_2">
+            <div id="item_2">
+                <div class="description_left desc">
+                    <p class="description">
+                        <strong>Product Name :&nbsp; &nbsp;</strong> <span class="content">Fusion II Drone</span>
+                        <br>
+                        <strong>Specifications :</strong><br>
+                    </p>    
+                    <ul class="content">
+                        <li>4/3 CMOS Hasselblad Camera</li>
+                        <li>Apple ProRes 422 HQ</li>
+                        <li>15km HD Video Transmission</li>
+                        <li>46-Min Flight Time</li>
+                        <li>Omnidirectional Obstacle Sensing</li>
+                    </ul>
+                    <p class="description">  
+                        <strong>Available Colours :</strong>
+                    </p>
+                    <button onclick="document.images[7].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_2_grey.png'" class="grey btn" id="item2_colour1">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <button onclick="document.images[7].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_2_black.png'" class="black btn" id="item2_colour2">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <button onclick="document.images[7].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_2_red.png'" class="red btn" id="item2_colour3">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <button onclick="document.images[7].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_2_blue.png'" class="blue btn" id="item2_colour4">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <form name="quantity">
+                        <label for="quantity_input2" id="quantity_label" class="description"> <strong>Quantity : </strong>&nbsp; &nbsp; </label>
+                        <input type="number" name="quantity" class="quantity_input" id="quantity_input2" value="1" min="1" max="9">
+                    </form>
+                    <button class="count" onclick="location.href='#cart_details'">0</button>
+                    <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/cart.png" alt="cart" id="cart_image" onclick="location.href='#cart_details'">
+                    <button id="cart_button" class="cart_button" onclick="item_2(); addToTheCart()">Add to The Cart</button>
+                </div>
+                <span class="vertical_line"></span>
+                <div class="item_right">
+                    <h1 class="product_name">Fusion II</h1>
+                    <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_2_grey.png" alt="Drone 2" id="drone_2">
+                    <p class="price_right">$ 499.00</p>
+                    <p class="in_stock_right">*In-Stock</p>
+                    <p class="stars_right">&bigstar; &bigstar; &bigstar; &bigstar; &star; </p>
+                    <p class="item_description_right item_desc">Featuring a 4/3 CMOS, powerful autonomous functions, and a compact body weighing less than 600g, Fusion 2 is the ultimate drone for creators on the move. Take this all-in-one aerial powerhouse along anywhere to experience and record your world in stunning detail.</p>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------- Drone 3 -------------------------------------->
+        <!-- Drone 3 introduction container -->
+        <div id="drone3_intro">
+            <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_3_intro.png" alt="Drone 3 Intro" class="intro3">
+            <h1>Fly Like a Bee with <span>Fusion Sky</span></h1>
+            <button class="learn_more"><a href="FusionSky.html">Learn More &#10132;</a></button>
+        </div>
+
+        <!-- Drone 3 details container -->
+        <div class="container_3">
+            <div id="item_1">
+                <div class="item_left" >
+                    <h1 class="product_name">Fusion Sky</h1>
+                    <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_3_black.png" alt="Drone 3" id="drone_3">
+                    <p class="price_left">$ 699.00</p>
+                    <p class="in_stock_left">*In-Stock</p>
+                    <p class="stars_left">&bigstar; &bigstar; &bigstar; &bigstar; &bigstar; </p>
+                    <p class="item_description_left item_desc">Fly through the sky in ways that seem impossible. We never lost our passion for flying, and with Fusion Sky, those passions have turned imagination into reality.</p>
+                </div>
+                <span class="vertical_line"></span>
+                <div class="description_right desc">
+                    <p class="description">
+                        <strong>Product Name :&nbsp; &nbsp; </strong> <span class="content">Fusion Sky Drone</span>
+                        <br>
+                        <strong>Specifications :</strong><br>
+                    </p>    
+                    <ul class="content">
+                        <li>1-inch CMOS Sensor</li>
+                        <li>MasterShots</li>
+                        <li>5.4K Video</li>
+                        <li>12km FHD Transmission</li>
+                        <li>Obstacle Sensing in 4 Directions</li>
+                    </ul>
+                    <p class="description">  
+                        <strong>Available Colours :</strong>
+                    </p>
+                    <button onclick="document.images[9].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_3_black.png'" class="black btn" id="item3_colour1">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <button onclick="document.images[9].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_3_purple.png'" class="purple btn" id="item3_colour2">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <button onclick="document.images[9].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_3_green.png';" class="green btn" id="item3_colour3">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <button onclick="document.images[9].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_3_gold.png'" class="gold btn" id="item3_colour4">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <form name="quantity">
+                        <label for="quantity_input3" id="quantity_label" class="description"> <strong>Quantity : </strong>&nbsp; &nbsp; </label>
+                        <input type="number" name="quantity" class="quantity_input" id="quantity_input3" value="1" min="1" max="9">
+                    </form>
+                    <button class="count" onclick="location.href='#cart_details'">0</button>
+                    <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/cart.png" alt="cart" id="cart_image" onclick="location.href='#cart_details'">
+                    <button id="cart_button" class="cart_button" onclick="item_3(); addToTheCart()">Add to The Cart</button>
+                </div>
+            </div>   
+        </div>
+
+        <!------------------------------------- Drone 4 -------------------------------------->
+        <!-- Drone 4 introduction container -->
+        <div id="drone4_intro">
+            <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_4_intro.png" alt="Drone 4 Intro" class="intro4">
+            <h1> <span>Fusion Ultra</span> <br> Brings You an <span>Ultra</span> <br> Flying Experience</h1>
+            <button class="learn_more"><a href="FusionUltra.html">Learn More &#10132;</a></button>
+        </div>
+
+        <!-- Drone 4 details container -->
+        <div class="container_4">
+            <div id="item_2">
+                <div class="description_left desc">
+                    <p class="description">
+                        <strong>Product Name :&nbsp; &nbsp;</strong> <span class="content">Fusion Ultra</span>
+                        <br>
+                        <strong>Specifications :</strong><br>
+                    </p>    
+                    <ul class="content">
+                        <li>Weighs Less than 249 g</li>
+                        <li>Tri-Directional Obstacle Sensing</li>
+                        <li>Record Up to 4K/60fps HDR Video</li>
+                        <li>34-min Max Flight Time</li>
+                        <li>True Vertical Shooting</li>
+                    </ul>
+                    <p class="description">  
+                        <strong>Available Colours :</strong>
+                    </p>
+                    <button onclick="document.images[13].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_4_orange.png'" class="orange btn" id="item4_colour1">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <button onclick="document.images[13].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_4_black.png'" class="black btn" id="item4_colour2">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <button onclick="document.images[13].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_4_yellow.png'" class="yellow btn" id="item4_colour3">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <button onclick="document.images[13].src='/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_4_blue.png'" class="blue btn" id="item4_colour4">&nbsp; &nbsp;</button>&nbsp; &nbsp;
+                    <form name="quantity">
+                        <label for="quantity_input4" id="quantity_label" class="description"> <strong>Quantity : </strong>&nbsp; &nbsp; </label>
+                        <input type="number" name="quantity" class="quantity_input" id="quantity_input4" value="1" min="1" max="9">
+                    </form>
+                    <button class="count" onclick="location.href='#cart_details'">0</button>
+                    <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/cart.png" alt="cart" id="cart_image" onclick="location.href='#cart_details'">
+                    <button id="cart_button" class="cart_button" onclick="item_4(); addToTheCart()">Add to The Cart</button>
+                </div>
+                <span class="vertical_line"></span>
+                <div class="item_right">
+                    <h1 class="product_name">Fusion Ultra</h1>
+                    <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/drone_4_orange.png" alt="Drone 4" id="drone_4">
+                    <p class="price_right">$ 999.00</p>
+                    <p class="in_stock_right">*In-Stock</p>
+                    <p class="stars_right">&bigstar; &bigstar; &bigstar; &bigstar; &bigstar; </p>
+                    <p class="item_description_right item_desc">Fusion Ultra sports a completely new look that is optimized to get more out of every flight. With larger propellers, an aerodynamic body tilt, and a powerful obstacle sensing system, the streamlined design allows for increased flight time and safety. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customer reviews container -->
+        <div class="reviews">
+            <h1 class="reviews_heading">See what customers say about us</h1>
+            <h2></h2>
+            <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/customer1.png" alt="Customer 1" class="customer1_image">
+            <div class="customer1">
+                <p class="name">&#11088;  &#11088;  &#11088;  &#11088; &#11088; <br><br> <strong>John Kay</strong> from Canada 🇨🇦 </p>
+                <p class="comment">"Very good drones for the best price...I'm new to drone flying, Fusion I is my first purchase. I was influenced by the reviews on YouTube and the ability for this drone to be flown safely over water... great drone... It's the first time I'm here to buy a drone. It is very easy to put together. I was able to fly this without any problems at all..."</p>
+            </div>
+            <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/customer2.png" alt="Customer 2" class="customer2_image">
+            <div class="customer2">
+                <p class="name">&#11088;  &#11088;  &#11088;  &#11088; &#11088; <br><br> <strong>Amily Ghoose</strong> from US 🇺🇸 </p>
+                <p class="comment">"King of all drones...The best of the best folks.I bought my Fusion Ultra in here. This drone has the longest battery life, the longest transmission signal range at 15k, the most wind resistance when it is in the air, the most obstacle sensors, and also the fastest travel speed and fastest take off flight in the air ever... Fusion Ultra is a fantastic drone. It was worth the wait..."</p>
+            </div>
+            <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/customer3.png" alt="Customer 3" class="customer3_image">
+            <div class="customer3">
+                <p class="name">&#11088;  &#11088;  &#11088;  &#11088; &#11088; <br><br> <strong>William Lee</strong> from UK 🇬🇧 </p>
+                <p class="comment">"The best on Fusion Drones is its easy to use...Recently I bought Fusion Sky in here. The drone is great....The drone is awesome! I love it. Having a screen on the controller is a huge perk compared to the other drones I've owned. I can recommend this place without any doubts to any other from anywhere..."</p>
+            </div>
+        </div>
+
+        <!-- Cart details container -->
+        <div id="cart_details">
+            <h1 class="cart_heading">Your Cart</h1>
+            <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/cart2.png" alt="cart" id="cart_image">
+            <h1 class="cart_titles">Product &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Colour &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Quantity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Price</h1>
+            <h2></h2>   
+            <h3 id="price">Total: $0</h3>
+            <input type="button" id="checkout_button" value="Go To Checkout &#10132;" onclick="location.href='#checkout'">
+        </div>
+
+        <!-- Checkout form container -->
+        <div id="checkout">
+            <div id="form">
+                <h1 id="checkout_title">Check-out Form</h1>
+                <form name="checkout_form" action="#invoice_container" method="post" onsubmit="return check_validity(checkout_form, event)">
+                    <fieldset id="personal">
+                        <legend class="legend"><i class="fa fa-user"></i>  Personal Details</legend>
+                        <br>
+                        <label for="fname" class="label"><span class="required">*</span> First Name :</label>
+                        <input type="text" placeholder="   ex: John" id="fname" name="fname" size="20">
+                        <br><br>
+                        <label for="lname" class="label"><span class="required">*</span> Last Name :</label>
+                        <input type="text" placeholder="   ex: Cena" id="lname" name="lname" size="20">
+                        <br><br>
+                        <label for="address" class="label address"><span class="required">*</span> Address : </label>
+                        <textarea name="address" id="address" placeholder="   ex: No, Street, City, Country"></textarea>
+                        <br><br>
+                    </fieldset>
+                    <br><br>
+                    <fieldset id="contact">
+                        <legend class="legend"><i class="fa fa-paper-plane"></i> Contact Details</legend>
+                        <br>
+                        <label for="phone" class="label"><span class="required">*</span> Contact Number :</label>
+                        <input type="tel" placeholder="   0123456789" id="phone" name="phone" size="20">
+                        <br><br>
+                        <label for="email" class="label"><span class="required">*</span> Email :</label>
+                        <input type="email" name="email" id="email" placeholder="   ex: john@gmail.com">
+                        <br><br>
+                    </fieldset>
+                    <br><br>
+                    <fieldset id="payment">
+                        <legend class="legend"><i class="fa fa-dollar-sign"></i> Payment Details</legend>
+                        <br>
+                        <h1 id="credit_cards">Accepted Cards</h1>
+                        <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/credit_cards.png" alt="Accepted Cards"> 
+                        <br>
+                        <label for="card_number" class="label pay1"><span class="required">*</span> Credit Card Number :</label>
+                        <input type="tel" placeholder="   xxxx-xxxx-xxxx-xxxx" id="card_number" name="card_number" size="20">
+                        <br><br>
+                        <label for="cvv" class="label pay2"><span class="required">*</span> CVV :</label>
+                        <input type="password" placeholder="   xxx" id="cvv" name="cvv" size="20">
+                        <br><br>
+                        <label for="expiration" class="label pay3"><span class="required">*</span> Expiration (m/y) : </label>
+                        <input type="month" name="expiration" id="expiration">
+                         <br><br>
+                    </fieldset>
+                    <br><br>
+                    <input type="checkbox" name="terms" id="check">
+                    <label for="check" id="terms">Terms and Conditions</label>
+                    <br>
+                    <div id="submit">
+                        <input type="reset" value="Reset" class="reset" onclick="update_reset_count()">
+                        <input type="submit" value="Place Order" id="send" class="send">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Invoice container -->
+        <div id="invoice_container">
+            <h1 id="invoice_title">Order Receipt</h1>
+            <div id="invoice">
+                <img src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/logo_white.png" alt="Logo" id="invoice_logo">
+                <i class="fa fa-house invoice_home"></i>
+                <i class="fa fa-print invoice_printer"></i>
+                <p id="success_message">Oops...You haven't placed an order yet</p>
+                <p id="order_number"></p>
+                <p class="summary">Order Summary</p>
+                <p id="customer_name"></p>
+                <p id="customer_number"></p>
+                <p id="customer_email"></p>
+                <p id="customer_address"></p>
+                <table id="items_table">
+                    <tr>
+                        <th>#Item No.</th>
+                        <th>Product Name</th>
+                        <th>Colour</th>
+                        <th>Quantity</th>
+                        <th>Price $</th>
+                    </tr>
+                </table>
+                <br>
+                <p id="items_total"></p>
+                <h1 id="thanks_message">Thank You!</h1>
+            </div>
+        </div>
+
+        <!-- Common footer container -->
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <img id="footer-logo" src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/logo_white.png" alt="Fusion Logo">
+                <p class="footer-links">
+                    <a href="index.html" class="link-1">Home</a>
+                    <a href="quiz.html">Quiz</a>
+                    <a href="Buy_Products.html">Store</a>
+                    <a href="thumbnail.html">Thumbnail Images</a>
+                    <a href="sitemap.html">Diagram SVG</a>
+                    <a href="our_team.html">Our Team</a>
+                </p>
+                <p class="footer-company-name">&copy;2022. The Fusion Drones.inc</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>57 Ramakrishna Rd</span>Colombo 06</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+94713848627</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:sarith.20210010@iit.ac.lk">sarith.20210010@iit.ac.lk</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About Us</span>
+                    We are Fusion Drones..... 
+                </p>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/sarith.wijesundera/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/s_a_r_i_t_h__w/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sarith-wijesundera-387808231/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <div id="editor-info">
+                    <a href="sarith.html"><i class="fa-solid fa-code"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to the top button -->
+        <button id="top"><a href="#page_top"><i class="fa fa-circle-chevron-up icon_top"></i></a></button>
+
+        <!-- Dark/light mode button -->
+        <button id="mode" onclick="switch_mode()"><i class="fa fa-moon moon"></i></button>
+
+        <!-- Js scripts -->
+        <script src="/Users/sarithwijesundera/Desktop/WDD_CW/Resources/w1912785_Sarith/Buy_Products/js_Buy_Products.js"></script>
+        <script src="https://kit.fontawesome.com/c0739b4840.js" crossorigin="anonymous"></script>
+    </body>
+</html>
